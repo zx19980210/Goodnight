@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mainpage_background"
+    tools:context=".Activity.LoginByPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@mipmap/logo"/>
+
+        <EditText
+            android:id="@+id/enterPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/button_shape"
+            android:hint="  Enter your phone number"
+            android:inputType="number"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/enterPassword"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:hint="  Enter your password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/grey"/>
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="30dp"
+            android:onClick="confirmLogin"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/confirm_button" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

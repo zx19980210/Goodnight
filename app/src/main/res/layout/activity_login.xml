@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@mipmap/mainpage_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@mipmap/logo"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_shape"
+            android:text="Login"
+            android:textColor="@color/background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:typeface="normal"
+            android:onClick="login"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_shape"
+            android:text="Register"
+            android:textColor="@color/background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:typeface="normal"
+            android:onClick="register"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_shape"
+            android:text="Change password"
+            android:textColor="@color/background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:typeface="normal"
+            android:onClick="changePassword"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

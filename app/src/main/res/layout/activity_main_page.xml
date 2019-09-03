@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/list_background"
+    tools:context=".Activity.MainPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="162dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:onClick="start_localMusic"
+            android:layout_marginLeft="27dp"
+            android:id="@+id/local_music"
+            android:src="@mipmap/local_music" />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="162dp"
+                android:id="@+id/chart"
+                android:onClick="showChart"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/chart"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="162dp"
+                android:layout_marginLeft="27dp"
+                android:onClick="start_wind"
+                android:id="@+id/wind_image"
+                android:src="@mipmap/wind" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@mipmap/half_moon" />-->
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="162dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="start_rain"
+                android:id="@+id/rain_image"
+                android:src="@mipmap/rain" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="162dp"
+                android:layout_marginLeft="27dp"
+                android:id="@+id/bird_image"
+                android:onClick="start_bird"
+                android:src="@mipmap/bird" />
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="162dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/piano_image"
+                android:onClick="start_piano"
+                android:src="@mipmap/piano" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

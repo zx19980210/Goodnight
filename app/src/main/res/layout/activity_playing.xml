@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/list_background"
+    tools:context=".Activity.PlayingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="openTimePicker"
+                android:id="@+id/alarm_set"
+                android:src="@mipmap/alarm_set"/>
+
+            <TextView
+                android:id="@+id/musicName"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:textAllCaps="false"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textColor="@color/transparent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="cancelAlarm"
+                android:id="@+id/alarm_cancel"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/alarm_cancel"/>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="243dp"
+            android:layout_height="245dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:onClick="playMusic"
+            android:src="@mipmap/full_moon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/timeUntilFinish"
+            android:background="@color/none"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/transparent"
+            android:textSize="26dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_indication"
+            android:text="No alarm"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/transparent"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/timeInMinute"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_shape"
+            android:cursorVisible="false"
+            android:hint=" Enter time in minute"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_setAlarm"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center_horizontal"
+            android:onClick="countDownSetting"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/background"
+            android:text="Timed off" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
